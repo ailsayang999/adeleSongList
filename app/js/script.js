@@ -34,6 +34,20 @@ songList.addEventListener("click", function onPanelClicked(event) {
   }
 });
 
+//function: addLyrics()
+function addLyrics(id){
+  axios
+    .get(BASE_URL + `${album.artist}/${albumArr[id]}.json`)
+    .then((res) => {
+      let lyrics = res.data.lyrics;
+      lyricsPanel.innerHTML = `
+      <h3>${albumArr[id]}</h3>
+      <pre>${lyrics}</pre>`;
+    })
+    .catch((err) => {
+      console.log(err.response);
+    }); 
+}
 
 
 
