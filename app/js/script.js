@@ -26,7 +26,13 @@ albumArr.forEach((item,index) => {
   songList.innerHTML += `<li data-id="${index}">${item}</li>`;
 });
 
-
+//add event listener to songList
+songList.addEventListener("click", function onPanelClicked(event) {
+  console.log(event.target);
+  if (event.target.matches("li")) {
+    addLyrics(event.target.dataset.id);
+  }
+});
 
 
 
