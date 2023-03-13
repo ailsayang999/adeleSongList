@@ -20,6 +20,11 @@ const album = {
   ],
 };
 
+//create song list （手刻CSS達到hover效果)
+const albumArr = album.tracks
+albumArr.forEach((item,index) => {
+  songList.innerHTML += `<li data-id="${index}">${item}</li>`;
+});
 
 
 
