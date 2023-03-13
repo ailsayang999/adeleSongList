@@ -6,3 +6,14 @@ body {
 .lyrics-box {
   border: 1px solid #dadada;
 }
+
+li {
+ padding: 4px;
+}
+
+li:hover{
+  border-radius: 10px;
+  background-color: rgb(5, 161, 161);
+  padding: 6px;
+  color:beige
+}
