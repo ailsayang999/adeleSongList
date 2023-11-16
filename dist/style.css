@@ -16,6 +16,7 @@ li:hover {
   background-color: rgb(5, 161, 161);
   padding: 6px;
   color: beige;
+  cursor:pointer;
 }
 
 h3 {
